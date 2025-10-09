@@ -1,4 +1,4 @@
-import { Header, Footer, WhatsAppButton } from "@/components/common";
+import { Header, Footer, ChatWidget } from "@/components/common";
 import { HeroSection } from "@/app/pages";
 
 
@@ -8,7 +8,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <Footer />
-      <WhatsAppButton />
+      <ChatWidget />
     </main>
   );
 }
