@@ -30,7 +30,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen pt-36 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <div className="absolute top-1/4 right-1/4 w-72 h-72 rounded-full bg-gradient-radial from-secondary/40 to-transparent animate-float"></div>

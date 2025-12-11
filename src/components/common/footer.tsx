@@ -172,7 +172,7 @@ export function Footer() {
 
               {/* Copyright */}
               <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 text-primary-foreground/60">
-                <p className="font-montserrat">© {new Date().getFullYear()} BuildWeb. Todos os direitos reservados.</p>
+                <p className="font-montserrat text-sm">© {new Date().getFullYear()} BuildWeb. Todos os direitos reservados.</p>
               </div>
 
               {/* Social Links & Scroll to Top */}

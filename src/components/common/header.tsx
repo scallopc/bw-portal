@@ -3,23 +3,40 @@
 import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { WhatsAppCTAButton } from "./whatsapp-cta-button";
 
 const navigationLinks = [
-  { id: "inicio", label: "Início" },
-  { id: "servicos", label: "Serviços" },
-  { id: "portfolio", label: "Portfólio" },
-  { id: "sobre", label: "Sobre" },
-  { id: "contato", label: "Contato" },
+  { id: "inicio", label: "Início", href: "/" },
+  { id: "servicos", label: "Serviços", href: "/services" },
+  { id: "portfolio", label: "Portfólio", href: "#portfolio" },
+  { id: "sobre", label: "Sobre", href: "#sobre" },
+  { id: "contato", label: "Contato", href: "#contato" },
 ];
 
 export function Header() {
-  const [activeSection, setActiveSection] = useState("inicio");
+  const pathname = usePathname();
+  const [activeSection, setActiveSection] = useState(() => {
+    // Define a seção ativa inicial com base na rota
+    if (pathname === '/services') return 'servicos';
+    if (pathname === '/') return 'inicio';
+    return 'inicio';
+  });
 
   useEffect(() => {
+    // Atualiza a seção ativa quando a rota muda
+    if (pathname === '/services') {
+      setActiveSection('servicos');
+    } else if (pathname === '/') {
+      setActiveSection('inicio');
+    }
+
     const handleScroll = () => {
+      // Só executa a lógica de scroll se estiver na página inicial
+      if (pathname !== '/') return;
+
       const sections = navigationLinks.map(link => link.id);
       const scrollPosition = window.scrollY + 100;
 
@@ -37,14 +54,20 @@ export function Header() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
+    if (pathname === '/') {
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+    }
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => {
+      if (pathname === '/') {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [pathname]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-xl">
+    <header className="fixed top-0 left-0 right-0 z-50  bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-xl">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
@@ -67,7 +90,7 @@ export function Header() {
               {navigationLinks.map((link) => (
                 <a
                   key={link.id}
-                  href={`#${link.id}`}
+                  href={link.href}
                   className={`font-medium text-sm tracking-wide transition-all duration-300 relative group py-2 ${activeSection === link.id
                     ? "text-primary"
                     : "text-foreground/80 hover:text-foreground"
@@ -110,7 +133,7 @@ export function Header() {
                     {navigationLinks.map((link) => (
                       <a
                         key={link.id}
-                        href={`#${link.id}`}
+                        href={link.href}
                         className={`text-lg font-montserrat font-medium transition-all duration-300 py-3 px-4 rounded-xl ${activeSection === link.id
                           ? "text-primary bg-secondary/10 border-l-4 border-secondary"
                           : "text-foreground/80 hover:text-foreground hover:bg-secondary/5"
