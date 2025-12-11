@@ -11,7 +11,7 @@ import { WhatsAppCTAButton } from "./whatsapp-cta-button";
 const navigationLinks = [
   { id: "inicio", label: "Início", href: "/" },
   { id: "servicos", label: "Serviços", href: "/services" },
-  { id: "portfolio", label: "Portfólio", href: "#portfolio" },
+  { id: "portfolio", label: "Portfólio", href: "/projects" },
   { id: "sobre", label: "Sobre", href: "#sobre" },
   { id: "contato", label: "Contato", href: "#contato" },
 ];
@@ -21,6 +21,7 @@ export function Header() {
   const [activeSection, setActiveSection] = useState(() => {
     // Define a seção ativa inicial com base na rota
     if (pathname === '/services') return 'servicos';
+    if (pathname === '/projects') return 'portfolio';
     if (pathname === '/') return 'inicio';
     return 'inicio';
   });
@@ -29,6 +30,8 @@ export function Header() {
     // Atualiza a seção ativa quando a rota muda
     if (pathname === '/services') {
       setActiveSection('servicos');
+    } else if (pathname === '/projects') {
+      setActiveSection('portfolio');
     } else if (pathname === '/') {
       setActiveSection('inicio');
     }
