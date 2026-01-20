@@ -3,7 +3,7 @@
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DEFAULT_WHATSAPP_NUMBER, useWhatsApp } from "@/lib/whatsapp";
-
+import { useTranslations } from "next-intl";
 interface WhatsAppCTAButtonProps {
   phoneNumber?: string;
   message?: string;
@@ -21,6 +21,7 @@ export function WhatsAppCTAButton({
   iconColor = "text-secondary",
   pingColor = "bg-secondary"
 }: WhatsAppCTAButtonProps) {
+  const t = useTranslations("whatsapp");
   const { openChatWithMessage, messages } = useWhatsApp();
 
   const handleClick = () => {
@@ -61,7 +62,7 @@ export function WhatsAppCTAButton({
     >
       <Phone className={`${iconClasses[variant]} animate-pulse ${iconColor}`} />
       <div className={`flex flex-col ${variant === 'mobile' ? 'items-center' : 'items-start'}`}>
-        <span className={`${textClasses[variant]} font-black tracking-wide`}>ORÇAMENTO</span>
+        <span className={`${textClasses[variant]} font-black tracking-wide`}>{t("btn")}</span>
       </div>
       <div className="flex items-center gap-1">
         <div className={`w-2 h-2 ${pingColor} rounded-full animate-ping`}></div>

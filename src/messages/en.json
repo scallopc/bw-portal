@@ -1,0 +1,289 @@
+{
+  "header": {
+    "title": "BW",
+    "description": "BuildWeb - Website & Systems Development",
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "projects": "Portfolio",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "language": "Language"
+  },
+  "whatsapp": {
+    "btn": "BUDGET"
+  },
+  "home": {
+    "hero": {
+      "tagTitle": "Specialized Web Development",
+      "title": {
+        "site": "Websites",
+        "revolution": "Reimagined",
+        "with": "with",
+        "technology": "Technology",
+        "advanced": "Advanced"
+      },
+      "subtitle": {
+        "transform": "Transform your business with",
+        "sites": "professional websites",
+        "and": "and",
+        "systems": "custom systems",
+        "generate": "that deliver real results."
+      },
+      "cta": {
+        "btn1": "REQUEST A QUOTE",
+        "btn2": "VIEW PORTFOLIO"
+      },
+      "design": {
+        "modern": "Modern Design",
+        "performance": "Performance",
+        "fast": "Fast Delivery"
+      }
+    }
+  },
+  "links": {
+    "form": {
+      "addTitle": "Add Link",
+      "editTitle": "Edit Link",
+      "title": "Title",
+      "titlePlaceholder": "My Instagram",
+      "url": "URL",
+      "urlPlaceholder": "https://instagram.com/yourusername",
+      "add": "Add",
+      "update": "Update",
+      "cancel": "Cancel",
+      "success": {
+        "add": "Link added successfully!",
+        "update": "Link updated successfully!",
+        "delete": "Link removed successfully!"
+      },
+      "errors": {
+        "required": "Please fill in all fields",
+        "invalidUrl": "Invalid URL. Please use http:// or https://"
+      }
+    },
+    "share": {
+      "title": "Share your links",
+      "copyLink": "Copy link"
+    },
+    "copied": "Link copied to clipboard!"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete digital solutions to take your business to the next level!",
+    "howWeCanHelpYou": "How We Can Help Your Business",
+    "servicesTypes": {
+      "sites": {
+        "title": "Corporate Websites",
+        "subtitle": "We build modern, responsive, conversion-focused websites that showcase your brand online.",
+        "features1": "Responsive design",
+        "features2": "SEO optimization",
+        "features3": "Social media integration",
+        "features4": "Contact form"
+      },
+      "crms": {
+        "title": "Custom Systems",
+        "subtitle": "We develop CRMs and tailored systems to automate and optimize your business processes.",
+        "features1": "Built to your needs",
+        "features2": "Integrations with other tools",
+        "features3": "Admin dashboard",
+        "features4": "Custom reports"
+      },
+      "seo": {
+        "title": "SEO Optimization",
+        "subtitle": "Improve your website ranking on search engines and attract more qualified leads.",
+        "features1": "Keyword research",
+        "features2": "Content optimization",
+        "features3": "Link building",
+        "features4": "Performance reports"
+      },
+      "landingPages": {
+        "title": "Landing Pages",
+        "subtitle": "High-converting pages designed to capture leads and boost your sales efficiently.",
+        "features1": "Optimized responsive design",
+        "features2": "High-converting forms",
+        "features3": "CRM tool integration",
+        "features4": "Built-in A/B testing"
+      },
+      "onePage": {
+        "title": "One-Page Website",
+        "subtitle": "Single-page websites that present your business in a direct and impactful way.",
+        "features1": "Modern, clean design",
+        "features2": "Smooth anchor navigation",
+        "features3": "Conversion-focused",
+        "features4": "Fast loading"
+      },
+      "blog": {
+        "title": "Websites with Blog",
+        "subtitle": "Full websites with an integrated blog to build authority and improve SEO.",
+        "features1": "Content management system",
+        "features2": "Search engine optimization",
+        "features3": "Responsive design",
+        "features4": "Social media integration"
+      },
+      "btn": "Learn More"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "leaveTestimonial": "Leave your experience",
+      "testimonialForm": {
+        "title": "Leave your experience",
+        "nameLabel": "Your name",
+        "namePlaceholder": "Your full name",
+        "companyLabel": "Company",
+        "companyPlaceholder": "Your company name",
+        "testimonialLabel": "Your experience",
+        "testimonialPlaceholder": "Share your experience with us",
+        "submit": "Send",
+        "cancel": "Cancel",
+        "success": "Thank you for your evaluation!",
+        "error": "An error occurred while sending your evaluation."
+      }
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Explore some of the work we’ve delivered for our clients",
+    "filter": {
+      "all": "All",
+      "systems": "Systems",
+      "sites": "Websites",
+      "landingPages": "Landing Pages",
+      "onePage": "One Page",
+      "blog": "Websites with Blog",
+      "description": {
+        "showing": "Showing",
+        "of": "project in"
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Turning ideas into innovative digital solutions from day one",
+    "history": {
+      "title": "Our Story",
+      "text": "Founded in 2023, BuildWeb was born from the passion to create digital solutions that truly make a difference. We started as a small team of developers passionate about technology and today we are a reference for high-quality web and mobile development.",
+      "text2": "Our journey is defined by challenging projects, satisfied clients, and a constant pursuit of innovation. We believe technology should be accessible, efficient, and transformative.",
+      "mission": {
+        "title": "Mission",
+        "description": "Build innovative digital solutions that drive our clients’ success."
+      },
+      "vision": {
+        "title": "Vision",
+        "description": "Be a reference in software development, recognized for excellence and innovation."
+      },
+      "values": {
+        "title": "Values",
+        "description": "Innovation, Excellence, Transparency, and Commitment to results."
+      }
+    },
+    "differentials": {
+      "tagTitle": "Our Differentials",
+      "title": "Why choose BuildWeb?",
+      "description": "We’re more than an agency — we’re partners in your digital success.",
+      "developmentAgile": {
+        "title": "Agile Development",
+        "description": "Agile methods for fast and efficient delivery, ensuring flexibility and adaptation to your needs."
+      },
+      "securityGuaranteed": {
+        "title": "Guaranteed Security",
+        "description": "We protect your data and your customers’ data with industry best practices in information security."
+      },
+      "support": {
+        "title": "Support",
+        "description": "Our team is always available to ensure everything runs smoothly, whenever you need it."
+      },
+      "highPerformance": {
+        "title": "High Performance",
+        "description": "Optimized solutions for fast loading and an exceptional user experience on every device."
+      },
+      "clearCommunication": {
+        "title": "Clear Communication",
+        "description": "Transparency and constant dialogue, keeping you informed at every stage of the project."
+      },
+      "globalVision": {
+        "title": "Global Vision",
+        "description": "We understand market trends to position your business ahead of the competition."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're ready to turn your ideas into reality. Get in touch with us!",
+    "form": {
+      "title": "Send us a message",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "required": "Required field",
+      "invalidEmail": "Invalid email",
+      "invalidPhone": "Invalid phone number",
+      "toastSuccess": "Message sent successfully!",
+      "toastError": "An error occurred while sending your message. Please try again later.",
+      "placeholderName": "Your name",
+      "placeholderEmail": "your@email.com",
+      "placeholderSubject": "Do you need something?",
+      "placeholderMessage": "Tell us how we can help you..."
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "Do you have any questions or suggestions? Contact us through the channels below or fill out the form.",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "workingHours": {
+      "title": "Working Hours",
+      "weekdays": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed"
+    }
+  },
+  "footer": {
+    "services": "Services",
+    "company": "Company",
+    "support": "Support",
+    "servicesUs": {
+      "sites": "Corporate Websites",
+      "landingPages": "Landing Pages",
+      "crms": "Custom CRMs",
+      "automacao": "AI Automation",
+      "whatsapp": "WhatsApp Integration"
+    },
+    "companyUs": {
+      "about": "About",
+      "projects": "Portfolio",
+      "contact": "Contact",
+      "testimonials": "Testimonials"
+    },
+    "supportUs": {
+      "help": "Help Center",
+      "docs": "Documentation",
+      "support": "Technical Support",
+      "status": "System Status",
+      "privacy": "Privacy Policy"
+    },
+    "cta": {
+      "title": {
+        "ready": "Ready to",
+        "transform": "transform",
+        "idea": "your idea?"
+      },
+      "subtitle": "Let’s build the website or system your company needs to grow and stand out in the digital market."
+    },
+    "brand": {
+      "title": "BuildWeb",
+      "description": "We turn ideas into websites and systems that generate real results.\n\nSpecialists in professional websites, custom CRMs, and AI-powered automation.",
+      "response": "Reply within 2 hours",
+      "workingHours": "Monday to Friday, 9am to 6pm"
+    },
+    "copyright": {
+      "description": "BuildWeb. All rights reserved."
+    }
+  }
+}

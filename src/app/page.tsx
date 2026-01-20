@@ -1,10 +1,6 @@
-import { HeroSection } from "@/app/pages";
+import { redirect } from "next/navigation";
+import { defaultLocale } from "@/i18n/config";
 
-
-export default function Home() {
-  return (
-    <main className="min-h-screen">
-      <HeroSection />
-    </main>
-  );
+export default function Page() {
+  redirect(`/${defaultLocale}`);
 }

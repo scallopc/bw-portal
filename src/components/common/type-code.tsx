@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const codeSnippets = {
   'main.tsx': `import * as React from 'react';
@@ -160,10 +160,10 @@ export const TypeCode = () => {
 
   const typeAllSnippets = async () => {
     const maxLength = Math.max(...Object.values(codeSnippets).map(code => code.length));
-    
+
     for (let i = 0; i < maxLength; i++) {
       await new Promise(resolve => setTimeout(resolve, 50));
-      
+
       setSnippetStates(prev => {
         const newState = { ...prev };
         Object.entries(codeSnippets).forEach(([key, code]) => {
@@ -206,11 +206,10 @@ export const TypeCode = () => {
           {Object.keys(codeSnippets).map((tab) => (
             <div
               key={tab}
-              className={`px-4 py-1 text-sm rounded cursor-pointer transition-all ${
-                activeTab === tab 
-                  ? 'bg-slate-700 text-white' 
+              className={`px-4 py-1 text-sm rounded cursor-pointer transition-all ${activeTab === tab
+                  ? 'bg-slate-700 text-white'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
-              }`}
+                }`}
               onClick={() => handleTabClick(tab)}
             >
               {tab}

@@ -1,0 +1,290 @@
+{
+  "header": {
+    "title": "BW",
+    "description": "BuildWeb - Criação de Sites e Sistemas",
+    "nav": {
+      "home": "Inicio",
+      "services": "Serviços",
+      "projects": "Portifólio",
+      "about": "Sobre",
+      "contact": "Contato"
+    },
+    "language": "Idioma"
+  },
+  "whatsapp": {
+    "btn": "ORÇAMENTO"
+  },
+  "home": {
+    "hero": {
+      "tagTitle": "Desenvolvimento Web Especializado ",
+      "title": {
+        "site": "Sites",
+        "revolution": "Revolucionados",
+        "with": "com",
+        "technology": "Tecnologia",
+        "advanced": "Avançada"
+      },
+      "subtitle": {
+        "transform": "Transforme seu negócio com",
+        "sites": "sites profissionais",
+        "and": "e",
+        "systems": "sistemas personalizados",
+        "generate": "que geram resultados reais."
+      },
+      "cta": {
+        "btn1": "SOLICITAR ORÇAMENTO",
+        "btn2": "VER PORTIFÓLIO"
+      },
+      "design": {
+        "modern": "Design Moderno",
+        "performance": "Performance",
+        "fast": "Entrega Rápida"
+      }
+    }
+  },
+
+  "links": {
+    "form": {
+      "addTitle": "Adicionar Link",
+      "editTitle": "Editar Link",
+      "title": "Título",
+      "titlePlaceholder": "Meu Instagram",
+      "url": "URL",
+      "urlPlaceholder": "https://instagram.com/seuusuario",
+      "add": "Adicionar",
+      "update": "Atualizar",
+      "cancel": "Cancelar",
+      "success": {
+        "add": "Link adicionado com sucesso!",
+        "update": "Link atualizado com sucesso!",
+        "delete": "Link removido com sucesso!"
+      },
+      "errors": {
+        "required": "Preencha todos os campos",
+        "invalidUrl": "URL inválida. Use http:// ou https://"
+      }
+    },
+    "share": {
+      "title": "Compartilhe seus links",
+      "copyLink": "Copiar link"
+    },
+    "copied": "Link copiado para a área de transferência!"
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Soluções digitais completas para impulsionar seu negócio para o próximo nível!",
+    "howWeCanHelpYou": "Como Podemos Ajudar Seu Negócio",
+    "servicesTypes": {
+      "sites": {
+        "title": "Sites Institucionais",
+        "subtitle": "Criamos sites modernos, responsivos e otimizados para conversão que destacam sua marca na internet.",
+        "features1": "Design responsivo",
+        "features2": "Otimização para SEO",
+        "features3": "Integração com redes sociais",
+        "features4": "Formulário de contato"
+      },
+      "crms": {
+        "title": "Sistemas Personalizados",
+        "subtitle": "Desenvolvemos CRMs e sistemas sob medida para automatizar e otimizar os processos do seu negócio.",
+        "features1": "Desenvolvimento sob demanda",
+        "features2": "Integração com outras ferramentas",
+        "features3": "Painel administrativo",
+        "features4": "Relatórios personalizados"
+      },
+      "seo": {
+        "title": "Otimização SEO",
+        "subtitle": "Melhore o posicionamento do seu site nos mecanismos de busca e atraia mais clientes qualificados.",
+        "features1": "Análise de palavras-chave",
+        "features2": "Otimização de conteúdo",
+        "features3": "Link building",
+        "features4": "Relatórios de desempenho"
+      },
+      "landingPages": {
+        "title": "Landing Pages",
+        "subtitle": "Páginas de conversão otimizadas para capturar leads e impulsionar suas vendas de forma eficiente.",
+        "features1": "Design responsivo e otimizado",
+        "features2": "Formulários de alta conversão",
+        "features3": "Integração com ferramentas de CRM",
+        "features4": "A/B testing integrado"
+      },
+      "onePage": {
+        "title": "One Page",
+        "subtitle": "Sites em página única perfeitos para apresentar seu negócio de forma direta e impactante.",
+        "features1": "Design moderno e limpo",
+        "features2": "Navegação suave por âncoras",
+        "features3": "Otimizado para conversão",
+        "features4": "Carregamento rápido"
+      },
+      "blog": {
+        "title": "Sites com Blog",
+        "subtitle": "Sites completos com blog integrado para fortalecer sua autoridade e melhorar o SEO.",
+        "features1": "Sistema de gerenciamento de conteúdo",
+        "features2": "Otimização para mecanismos de busca",
+        "features3": "Design responsivo",
+        "features4": "Integração com redes sociais"
+      },
+      "btn": "Saiba Mais"
+    },
+    "testimonials": {
+      "title": "O Que Nossos Clientes Dizem",
+      "leaveTestimonial": "Avalie sua experiência",
+      "testimonialForm": {
+        "title": "Deixe sua avaliação",
+        "nameLabel": "Seu nome",
+        "namePlaceholder": "Seu nome completo",
+        "companyLabel": "Empresa",
+        "companyPlaceholder": "Sua empresa",
+        "testimonialLabel": "Sua avaliação",
+        "testimonialPlaceholder": "Conte-nos sobre sua experiência...",
+        "submit": "Enviar avaliação",
+        "cancel": "Cancelar",
+        "success": "Obrigado pela sua avaliação!",
+        "error": "Ocorreu um erro ao enviar sua avaliação."
+      }
+    }
+  },
+  "projects": {
+    "title": "Nossos Projetos",
+    "subtitle": "Conheça alguns dos trabalhos que realizamos para nossos clientes",
+    "filter": {
+      "all": "Todos",
+      "systems": "Sistemas",
+      "sites": "Websites",
+      "landingPages": "Landing Pages",
+      "onePage": "One Page",
+      "blog": "Sites com Blog",
+      "description": {
+        "showing": "Mostrando",
+        "of": "projeto em"
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "subtitle": "Transformando ideias em soluções digitais inovadoras desde o primeiro dia",
+    "history": {
+      "title": "Nossa História",
+      "text": "Fundada em 2023, a BuildWeb nasceu da paixão por criar soluções digitais que realmente fazem a diferença. Começamos como uma pequena equipe de desenvolvedores apaixonados por tecnologia e hoje somos referência em desenvolvimento web e mobile de alta qualidade.",
+      "text2": "Nossa jornada é marcada por projetos desafiadores, clientes satisfeitos e uma busca constante por inovação. Acreditamos que a tecnologia deve ser acessível, eficiente e transformadora.",
+      "mission": {
+        "title": "Missão",
+        "description": "Desenvolver soluções digitais inovadoras que impulsionam o sucesso dos nossos clientes."
+      },
+      "vision": {
+        "title": "Visão",
+        "description": "Ser referência em desenvolvimento de software, reconhecida pela excelência e inovação."
+      },
+      "values": {
+        "title": "Valores",
+        "description": "Inovação, Excelência, Transparência e Comprometimento com resultados."
+      }
+    },
+    "differentials": {
+      "tagTitle": "Nossos Diferenciais",
+      "title": "Por que escolher a BuildWeb?",
+      "description": "Somos mais que uma agência, somos parceiros no sucesso do seu negócio digital.",
+      "developmentAgile": {
+        "title": "Desenvolvimento Ágil",
+        "description": "Metodologias ágeis para entregas rápidas e eficientes, garantindo flexibilidade e adaptação às suas necessidades."
+      },
+      "securityGuaranteed": {
+        "title": "Segurança Garantida",
+        "description": "Protegemos seus dados e os de seus clientes com as melhores práticas de segurança da informação."
+      },
+      "support": {
+        "title": "Suporte",
+        "description": "Nossa equipe está sempre disponível para garantir que tudo funcione perfeitamente, a qualquer momento."
+      },
+      "highPerformance": {
+        "title": "Alta Performance",
+        "description": "Soluções otimizadas para carregamento rápido e experiência de usuário excepcional em todos os dispositivos."
+      },
+      "clearCommunication": {
+        "title": "Comunicação Clara",
+        "description": "Transparência e diálogo constante, mantendo você informado em cada etapa do projeto."
+      },
+      "globalVision": {
+        "title": "Visão Global",
+        "description": "Entendemos as tendências de mercado para posicionar seu negócio à frente da concorrência."
+      }
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Estamos prontos para transformar suas ideias em realidade. Fale conosco!",
+    "form": {
+      "title": "Envie-nos uma mensagem",
+      "name": "Nome Completo",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "submit": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "required": "Campo obrigatório",
+      "invalidEmail": "E-mail inválido",
+      "invalidPhone": "Telefone inválido",
+      "toastSuccess": "Mensagem enviada com sucesso!",
+      "toastError": "Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde.",
+      "placeholderName": "Seu nome",
+      "placeholderEmail": "seu@email.com",
+      "placeholderSubject": "O que você precisa?",
+      "placeholderMessage": "Conte-nos como podemos ajudar..."
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "description": "Tem alguma dúvida ou sugestão? Entre em contato conosco através dos canais abaixo ou preencha o formulário ao lado.",
+      "email": "E-mail",
+      "phone": "Telefone"
+    },
+    "workingHours": {
+      "title": "Horário de Funcionamento",
+      "weekdays": "Segunda - Sexta",
+      "saturday": "Sábado",
+      "sunday": "Domingo",
+      "closed": "Fechado"
+    }
+  },
+  "footer": {
+    "services": "Serviços",
+    "company": "Empresa",
+    "support": "Suporte",
+    "servicesUs": {
+      "sites": "Sites Institucionais",
+      "landingPages": "Landing Pages",
+      "crms": "CRMs Personalizados",
+      "automacao": "Automação com IA",
+      "whatsapp": "Integração WhatsApp"
+    },
+    "companyUs": {
+      "about": "Sobre",
+      "projects": "Portifólio",
+      "contact": "Contato",
+      "testimonials": "Depoimentos"
+    },
+    "supportUs": {
+      "help": "Central de Ajuda",
+      "docs": "Documentação",
+      "support": "Suporte Técnico",
+      "status": "Status do Sistema",
+      "privacy": "Política de Privacidade"
+    },
+    "cta": {
+      "title": {
+        "ready": "Pronto para",
+        "transform": "transformar",
+        "idea": "sua ideia?"
+      },
+      "subtitle": "Vamos criar juntos o site ou sistema que sua empresa precisa para crescer e se destacar no mercado digital."
+    },
+    "brand": {
+      "title": "BuildWeb",
+      "description": "Transformamos ideias em sites e sistemas que geram resultados reais.\n\nEspecialistas em criação de sites profissionais, CRMs personalizados e automações com IA.",
+      "response": "Resposta em até 2h",
+      "workingHours": "Segunda a Sexta, 9h às 18h"
+    },
+    "copyright": {
+      "description": "BuildWeb. Todos os direitos reservados."
+    }
+  }
+}

@@ -3,33 +3,34 @@
 import { Mail, Phone, Facebook, Instagram, ArrowUp } from "lucide-react";
 import Image from "next/image";
 import { WhatsAppCTAButton } from "./whatsapp-cta-button";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
+  const t = useTranslations("footer");
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const footerLinks = {
     services: [
-      { name: "Sites Institucionais", href: "#servicos" },
-      { name: "Landing Pages", href: "#servicos" },
-      { name: "CRMs Personalizados", href: "#servicos" },
-      { name: "Automação com IA", href: "#servicos" },
-      { name: "Integração WhatsApp", href: "#servicos" }
+      { name: t("servicesUs.sites"), href: "#servicos" },
+      { name: t("servicesUs.landingPages"), href: "#servicos" },
+      { name: t("servicesUs.crms"), href: "#servicos" },
+      { name: t("servicesUs.automacao"), href: "#servicos" },
+      { name: t("servicesUs.whatsapp"), href: "#servicos" }
     ],
     company: [
-      { name: "Sobre Nós", href: "#sobre" },
-      { name: "Portfólio", href: "#portfolio" },
-      { name: "Depoimentos", href: "#testimonials" },
-      { name: "Contato", href: "#contato" },
-      { name: "Blog", href: "#blog" }
+      { name: t("companyUs.about"), href: "#sobre" },
+      { name: t("companyUs.projects"), href: "#portfolio" },
+      { name: t("companyUs.testimonials"), href: "#testimonials" },
+      { name: t("companyUs.contact"), href: "#contato" },
     ],
     support: [
-      { name: "Central de Ajuda", href: "#help" },
-      { name: "Documentação", href: "#docs" },
-      { name: "Suporte Técnico", href: "#support" },
-      { name: "Status do Sistema", href: "#status" },
-      { name: "Política de Privacidade", href: "#privacy" }
+      { name: t("supportUs.help"), href: "#help" },
+      { name: t("supportUs.docs"), href: "#docs" },
+      { name: t("supportUs.support"), href: "#support" },
+      { name: t("supportUs.status"), href: "#status" },
+      { name: t("supportUs.privacy"), href: "#privacy" }
     ]
   };
 
@@ -52,10 +53,10 @@ export function Footer() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-oswald font-bold mb-6">
-                Pronto para <span className="text-secondary">Transformar</span> sua Ideia?
+                {t("cta.title.ready")} <span className="text-secondary">{t("cta.title.transform")}</span> {t("cta.title.idea")}
               </h2>
               <p className="text-lg sm:text-xl text-primary-foreground/80 mb-8 font-montserrat">
-                Vamos criar juntos o site ou sistema que sua empresa precisa para crescer e se destacar no mercado digital.
+                {t("cta.subtitle")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <WhatsAppCTAButton variant="desktop" className="bg-secondary hover:bg-secondary/90 text-primary border-secondary/30" pingColor="bg-primary" iconColor="text-primary" />
@@ -79,9 +80,8 @@ export function Footer() {
                     height={60}
                   />
                 </div>
-                <p className="text-primary-foreground/80 leading-relaxed text-lg font-montserrat mb-6">
-                  Transformamos ideias em sites e sistemas que geram resultados reais.
-                  Especialistas em criação de sites profissionais, CRMs personalizados e automações com IA.
+                <p className="text-primary-foreground/80 leading-relaxed text-md font-montserrat mb-6">
+                  {t("brand.description")}
                 </p>
 
 
@@ -90,13 +90,13 @@ export function Footer() {
 
             {/* Services */}
             <div>
-              <h4 className="text-xl font-oswald font-bold text-secondary mb-6">Serviços</h4>
+              <h4 className="text-xl font-oswald font-bold text-secondary mb-6">{t("services")}</h4>
               <ul className="space-y-3">
                 {footerLinks.services.map((link, index) => (
                   <li key={index}>
                     <a
                       href={link.href}
-                      className="text-primary-foreground/80 hover:text-secondary font-montserrat hover:translate-x-1 transform transition-all duration-200"
+                      className="text-primary-foreground/80 text-sm hover:text-secondary font-montserrat hover:translate-x-1 transform transition-all duration-200"
                     >
                       {link.name}
                     </a>
@@ -107,13 +107,13 @@ export function Footer() {
 
             {/* Company */}
             <div>
-              <h4 className="text-xl font-oswald font-bold text-secondary mb-6">Empresa</h4>
+              <h4 className="text-xl font-oswald font-bold text-secondary mb-6">{t("company")}</h4>
               <ul className="space-y-3">
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
                     <a
                       href={link.href}
-                      className="text-primary-foreground/80 hover:text-secondary font-montserrat hover:translate-x-1 transform transition-all duration-200"
+                      className="text-primary-foreground/80 text-sm hover:text-secondary font-montserrat hover:translate-x-1 transform transition-all duration-200"
                     >
                       {link.name}
                     </a>
@@ -124,13 +124,13 @@ export function Footer() {
 
             {/* Support */}
             <div>
-              <h4 className="text-xl font-oswald font-bold text-secondary mb-6">Suporte</h4>
+              <h4 className="text-xl font-oswald font-bold text-secondary mb-6">{t("support")}</h4>
               <ul className="space-y-3">
                 {footerLinks.support.map((link, index) => (
                   <li key={index}>
                     <a
                       href={link.href}
-                      className="text-primary-foreground/80 hover:text-secondary font-montserrat hover:translate-x-1 transform transition-all duration-200"
+                      className="text-primary-foreground/80 text-sm hover:text-secondary font-montserrat hover:translate-x-1 transform transition-all duration-200"
                     >
                       {link.name}
                     </a>
@@ -148,8 +148,8 @@ export function Footer() {
                   <Phone className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
-                  <p className="text-primary-foreground font-semibold text-lg">(11) 91226-0094</p>
-                  <p className="text-primary-foreground/70 text-sm font-montserrat">Segunda a Sexta, 9h às 18h</p>
+                  <p className="text-primary-foreground font-semibold text-md">(+55) 11 91226-0094</p>
+                  <p className="text-primary-foreground/70 text-sm font-montserrat">{t("brand.workingHours")}</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4 bg-primary-foreground/5 p-4 rounded-xl backdrop-blur-sm border border-primary-foreground/10">
@@ -157,8 +157,8 @@ export function Footer() {
                   <Mail className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
-                  <p className="text-primary-foreground font-semibold text-lg">contato@buildweb.com</p>
-                  <p className="text-primary-foreground/70 text-sm font-montserrat">Resposta em até 2h</p>
+                  <p className="text-primary-foreground font-semibold text-md">contato@buildweb.com.br</p>
+                  <p className="text-primary-foreground/70 text-sm font-montserrat">{t("brand.response")}</p>
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@ export function Footer() {
 
               {/* Copyright */}
               <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 text-primary-foreground/60">
-                <p className="font-montserrat text-sm">© {new Date().getFullYear()} BuildWeb. Todos os direitos reservados.</p>
+                <p className="font-montserrat text-sm">© {new Date().getFullYear()} {t("copyright.description")}</p>
               </div>
 
               {/* Social Links & Scroll to Top */}

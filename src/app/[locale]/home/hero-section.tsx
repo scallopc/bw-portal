@@ -4,8 +4,10 @@ import { Button, TypeCode } from "@/components";
 import { ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useWhatsApp } from "@/lib/whatsapp";
+import { useTranslations } from "next-intl";
 
 export function HeroSection() {
+  const t = useTranslations('home');
   const [counts, setCounts] = useState({ clean: 0, projects: 0, performance: 0 });
   const { openChatWithMessage, messages } = useWhatsApp();
 
@@ -23,7 +25,7 @@ export function HeroSection() {
         setCounts(prev => ({ ...prev, [key]: Math.floor(current) }));
       }, 30);
     };
-
+    console.log(counts)
     animateCount(100, 'clean');
     animateCount(500, 'projects');
     animateCount(99, 'performance');
@@ -45,32 +47,32 @@ export function HeroSection() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 text-secondary font-medium rounded-full text-sm">
                 <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-                Desenvolvimento Web Especializado              </div>
+                {t('hero.design.modern')}              </div>
 
               <div className="space-y-1">
                 <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-6xl font-bold text-foreground leading-none">
-                  Sites
+                  {t('hero.title.site')}
                 </h1>
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-none">
-                  Revolucionados
+                  {t('hero.title.revolution')}
                 </h1>
                 <div className="flex items-center gap-4">
                   <div className="h-px bg-gradient-to-r from-secondary/30 to-transparent flex-1"></div>
                   <span className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-light text-secondary">
-                    com
+                    {t('hero.title.with')}
                   </span>
                   <div className="h-px bg-gradient-to-l from-secondary/30 to-transparent flex-1"></div>
                 </div>
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-none">
-                  Tecnologia
+                  {t('hero.title.technology')}
                 </h1>
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-foreground via-foreground/80 to-foreground/60 bg-clip-text text-transparent leading-none">
-                  Avançada
+                  {t('hero.title.advanced')}
                 </h1>
               </div>
 
               <p className="text-xl text-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Transforme seu negócio com <span className="text-foreground font-semibold">sites profissionais</span> e <span className="text-foreground font-semibold">sistemas personalizados</span> que geram resultados reais.
+                {t('hero.subtitle.transform')} <span className="text-foreground font-semibold">{t('hero.subtitle.sites')}</span> {t('hero.subtitle.and')} <span className="text-foreground font-semibold">{t('hero.subtitle.systems')}</span> {t('hero.subtitle.generate')}
               </p>
             </div>
 
@@ -80,10 +82,10 @@ export function HeroSection() {
                 size="lg"
               >
                 <ArrowRight className="w-5 h-5 text-secondary group-hover:translate-x-0.5 transition-transform duration-300" />
-                SOLICITAR ORÇAMENTO
+                {t('hero.cta.btn1')}
               </Button>
               <Button variant="outline" size="lg">
-                Ver Portfólio
+                {t('hero.cta.btn2')}
               </Button>
             </div>
 
@@ -92,19 +94,19 @@ export function HeroSection() {
                 <div className="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center animate-pulse">
                   <div className="w-3 h-3 bg-secondary rounded-full"></div>
                 </div>
-                <span className="text-xs sm:text-sm text-secondary font-medium">Design Moderno</span>
+                <span className="text-xs sm:text-sm text-secondary font-medium">{t('hero.design.modern')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center animate-pulse">
                   <div className="w-3 h-3 bg-secondary rounded-full"></div>
                 </div>
-                <span className="text-xs sm:text-sm text-secondary font-medium">Performance</span>
+                <span className="text-xs sm:text-sm text-secondary font-medium">{t('hero.design.performance')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center animate-pulse">
                   <div className="w-3 h-3 bg-secondary rounded-full"></div>
                 </div>
-                <span className="text-xs sm:text-sm text-secondary font-medium">Entrega Rápida</span>
+                <span className="text-xs sm:text-sm text-secondary font-medium">{t('hero.design.fast')}</span>
               </div>
             </div>
           </div>

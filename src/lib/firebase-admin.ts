@@ -10,7 +10,13 @@ function getPrivateKey(): string | undefined {
 
 let app: App | undefined;
 
-if (!getApps().length) {
+function getOrInitAdminApp(): App {
+  if (app) return app;
+  if (getApps().length) {
+    app = getApps()[0];
+    return app;
+  }
+
   const svcJson = process.env.FIREBASE_SERVICE_ACCOUNT_KEY;
   let projectId: string | undefined;
   let clientEmail: string | undefined;
@@ -25,9 +31,9 @@ if (!getApps().length) {
       };
       projectId = parsed.project_id;
       clientEmail = parsed.client_email;
-      privateKey = (parsed.private_key || '').replace(/\\n/g, "\n");
+      privateKey = (parsed.private_key || "").replace(/\\n/g, "\n");
     } catch (e) {
-      throw new Error('Invalid FIREBASE_SERVICE_ACCOUNT_KEY JSON');
+      throw new Error("Invalid FIREBASE_SERVICE_ACCOUNT_KEY JSON");
     }
   } else {
     projectId = process.env.FIREBASE_PROJECT_ID;
@@ -41,11 +47,23 @@ if (!getApps().length) {
     });
   } else {
     throw new Error(
-      'Missing Firebase Admin credentials. Provide FIREBASE_SERVICE_ACCOUNT_KEY (preferred) or FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY.'
+      "Missing Firebase Admin credentials. Provide FIREBASE_SERVICE_ACCOUNT_KEY (preferred) or FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY."
     );
   }
+
+  return app;
 }
 
-export const adminAuth = getAuth();
-export const adminDb = getFirestore();
-export default app!;
+export function getAdminAuth() {
+  const adminApp = getOrInitAdminApp();
+  return getAuth(adminApp);
+}
+
+export function getAdminDb() {
+  const adminApp = getOrInitAdminApp();
+  return getFirestore(adminApp);
+}
+
+export const adminAuth = getAdminAuth();
+export const adminDb = getAdminDb();
+export default getOrInitAdminApp();
